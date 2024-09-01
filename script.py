@@ -7,7 +7,7 @@ def download_spotify_playlist(playlist_url, output_directory):
     # Create the command to download the playlist
     command = [
         spotdl_path, '--playlist', playlist_url,
-        '--output', f'{output_directory}/%(title)s.%(ext)s'
+         '--output', f'{output_directory}/Spotify  Playlist'
     ]
 
     try:
