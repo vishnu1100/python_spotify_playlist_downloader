@@ -32,5 +32,14 @@ Repo for spotdl library ----  https://github.com/spotDL/spotify-downloader/
 
 ----- run the script file using  command -- python script.py --
 
+
+------ If error occurs based on ffmpeg then run this command -----------    spotdl --download-ffmpeg  -----------
+
+
+
+
+----- If this error occurs    ---------- 'spotdl' is not recognized as an internal or external command,
+operable program or batch file.----------  paste the spotdl location on system environment   
+
  
 

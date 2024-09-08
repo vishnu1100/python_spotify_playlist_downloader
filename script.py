@@ -2,7 +2,7 @@ import subprocess
 
 def download_spotify_playlist(playlist_url, output_directory):
     # Full path to spotdl executable
-    spotdl_path = r'C:\Users\yourname\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts\spotdl.exe'
+    spotdl_path = r'C:\Users\vishn\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\Scripts\spotdl.exe'
 
     # Create the command to download the playlist
     command = [
@@ -22,6 +22,6 @@ def download_spotify_playlist(playlist_url, output_directory):
 if __name__ == "__main__":
     link = input("Paste spotify  playlist URL link: ")
     playlist_url = link;
-    output_directory = r"C:\Users\yourname\Desktop\musik"
+    output_directory = r"C:\Users\Vishn\Desktop\test"
 
     download_spotify_playlist(playlist_url, output_directory)
