@@ -30,4 +30,7 @@ Repo for spotdl library ----  https://github.com/spotDL/spotify-downloader/
 ----- Also change the output_directory   located on line 25   eg (C:\Users\yourname\Desktop\musik)
 
 
+----- run the script file using  command -- python script.py --
+
+ 
 
