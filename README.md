@@ -1,2 +1,5 @@
 # python_spotify_playlist_downloader
-python_spotify_playlist_bulk_downloader
+
+
+
+Simple script for downloading the entire playlist  from  Spotify  using python and spotify API library ---
