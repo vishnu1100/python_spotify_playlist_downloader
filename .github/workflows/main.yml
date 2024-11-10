@@ -1,0 +1,39 @@
+name: Auto Commit Bot
+
+on:
+  schedule:
+    - cron: '*/20 * * * *' # Runs every 20 minutes
+  workflow_dispatch:  # Allows manual execution of the workflow
+
+permissions:
+  contents: write
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Check out the repository with credentials persisted
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: true
+
+    # Step 2: Modify the file
+    - name: Modify the file
+      run: echo "Commit made on $(date)" >> commit_file.txt
+
+    # Step 3: Configure Git
+    - name: Configure Git user
+      run: |
+        git config --global user.name "Vishnu1100"
+        git config --global user.email "vishnusanthoshvr@gmail.com"
+
+    # Step 4: Commit and push changes
+    - name: Commit and push changes
+      run: |
+        git add commit_file.txt
+        git commit -m "Automated commit on $(date)" || echo "No changes to commit"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
